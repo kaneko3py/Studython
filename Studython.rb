@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# Study-son (Study Seesaw/Study Pin)
+# Studython (Study Seesaw/Study Pin)
 #  2014-01-18 ko.kaneko
 
 require "rubygems"
@@ -10,7 +10,7 @@ Bundler.require(:default)
 #   dm-timestamps dm-types dm-aggregates date json).each  { |lib| require lib}
 
 #data-mapper
-db_path = File.dirname(__FILE__) + "/studyson.db"
+db_path = File.dirname(__FILE__) + "/studython.db"
 DataMapper.setup(:default, 'sqlite3:' + db_path)
 class Project
     include DataMapper::Resource
@@ -219,7 +219,7 @@ html.responsive
         link rel="stylesheet" type="text/css" href="/xtyle/css/xtyle.css"
         script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
         /! script src="/xtyle/js/xtyle.js"
-        title == "Study-son"
+        title == "Studython"
         javascript:
             function close_win(){
                var nvua = navigator.userAgent;
